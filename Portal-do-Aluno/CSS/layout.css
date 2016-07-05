@@ -237,34 +237,36 @@ a{
     .block-nobg{position: relative;background-color: none;}
 
     .title-block{
-      height:45px;
+      height:40px;
+	  line-height: 40px;
       font-weight: normal;
-      padding: 0 0 0 10px;
+      padding: 0 0 0 20px;
       text-transform: uppercase;
     }
     .title-block-bg{
-      background:#5392d8;
-      color:#fff;
+      background-color: #5392d8;
+      color: #fff;
     }
-        .title-block-bg a{
+        .title-block-bg > a{
             color:#fff;
             float:right;
             font-size: 0.875em;
-            line-height: 45px;
-            padding:0 10px;
+            padding: 0 20px;
             text-decoration: underline;
+			-webkit-transition: background-color .3s ease;
+			-moz-transition: background-color .3s ease;
+			transition: background-color .3s ease;
         }
 
         .title-block-bg a:hover{
-            /*text-decoration: underline;*/
+            text-decoration: none;
             background-color: #f78b1f;
         }
-        .title-block h3{
+
+        .title-block h3 {
             display:inline-block;
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: normal;
-            height:100%;
-            line-height: 45px;
         }
 
     .section-class .content-block{
