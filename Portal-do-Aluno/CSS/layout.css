@@ -213,9 +213,12 @@ a{
         }
 			.header .data-perfil > p {line-height: 1em;}
 
-			.header .data-perfil > .reg-username {font-size: 1em;}
+			.header .data-perfil > .reg-username {
+				color: #2e2e2e;
+				font-size: 1em;
+			}
 			.header .data-perfil > .reg-id {
-				color: #6b6b6b;
+				color: #8f8f8f;
 				font-size: 0.875em;
 			}
 
