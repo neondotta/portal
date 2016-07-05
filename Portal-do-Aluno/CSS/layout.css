@@ -175,6 +175,7 @@ a{
         }
     .side-nav nav ul li ul{
         padding:0 20px;
+        display:none;
         /*background:#fff;*/
     }
 /**********************      HEADER:    ********************/
