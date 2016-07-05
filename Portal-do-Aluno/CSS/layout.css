@@ -135,12 +135,24 @@ a{
 
 /**********************      MENU:    ********************/
 
+.container.col-pc-12 {padding-left: 65px;}
+
 .side-nav{
     background:#D1D5DE;
     height: 100vh;
     box-shadow: .5px 5px 25px 1px #000;
+	/*transition: width .3s ease;*/
     font-size: 0.875em;
 }
+	.side-nav.closed {
+		width: 65px;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+
 .side-nav i{
     text-align: center;
     font-size: 1.125em;

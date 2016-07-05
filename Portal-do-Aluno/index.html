@@ -5,56 +5,57 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	<title>SenacRS - Portal</title>
 	<link rel="stylesheet" href="CSS/layout.css">
+	<link rel="stylesheet" href="CSS/layout-tablet.css">
 	<link rel="stylesheet" href="CSS/layout-mobile.css">
 	<link rel="stylesheet" href="CSS/font-awesome.min.css">
 </head>
 <body>
 
-<section class="col-pc-2 side-nav">
-	<div class="header-nav">
+<section class="col-pc-2 side-nav opened">
+	<div class="header-nav" id="menu-button">
 		<p>
 			<i class="fa fa-reorder"></i>
-			Menu
+			<span class="menu-item-text">Menu</span>
 		</p>
-		<i class="fa fa-remove float-r"></i>
+		<i class="fa fa-remove float-r menu-item-text"></i>
 	</div>
 	<nav class="col-pc-12">
 		<ul>
 			<li>
 				<a href="#" class="active">
 					<i class="fa fa-home"></i>
-					Página Inicial
+					<span class="menu-item-text">Página Inicial</span>
 				</a>
 			</li>
 			<li>
 				<a href="">
 					<i class="fa fa-book"></i>
-					Biblioteca
+					<span class="menu-item-text">Biblioteca</span>
 				</a>
 			</li>
 			<li>
 				<a href="">
 					<i class="fa fa-user"></i>
-					Dados Cadastrais
+					<span class="menu-item-text">Dados Cadastrais</span>
 				</a>
 			</li>
 			<li class="dropdown">
 				<a href="">
 					<i class="fa fa-money"></i>
-					Financeiro
-					<i class="fa fa-plus float-r"></i>
+					<span class="menu-item-text">Financeiro</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
 				</a>
 				<ul>
 					<li>
 						<a href="">
 							<i class="fa fa-frown-o"></i>
-							Boletos
+							<span class="menu-item-text">Boletos</span>
 						</a>
 					</li>
 					<li>
 						<a href="">
 							<i class="fa fa-institution"></i>
-							Comprovante de I.R
+							<span class="menu-item-text">Comprovante de I.R</span>
 						</a>
 					</li>
 				</ul>
@@ -62,16 +63,16 @@
 			<li>
 				<a href="">
 					<i class="fa fa-graduation-cap"></i>
-					Matrículas
-					<i class="fa fa-plus float-r"></i>
+					<span class="menu-item-text">Matrículas</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
 				</a>
 			</li>
 		</ul>
 	</nav>
 </section>
 
-<header class="col-pc-10">
-	<div class="col-pc-11 header center-auto">
+<div class="container col-pc-10 col-tb-12 col-mb-12">
+	<header class="col-pc-11 col-tb-11 col-mb-11 header center-auto">
 		<img src="img/logo.png" alt="Senac RS" class="logo" width="67" height="39">
 		<div class="perfil">
 			<div class="data-perfil">
@@ -82,36 +83,33 @@
 			<img src="img/Koala.jpg" alt="Favorito" width="30" height="30">
 
 			<i class="fa fa-chevron-down"></i>
-		</div>
 	</div>
-</header>
-<main class="col-pc-10 col-mb-12">
-	<div class="col-pc-11 col-mb-11 center-auto">
-
+	</header>
+	<main class="col-pc-11 col-tb-11 col-mb-11 center-auto">
 		<div class="breadcrumb">
 			Página inicial
 		</div>
 
-		<section class="col-pc-7 col-mb-12 block section-class">
+		<section class="col-pc-7 col-tb-12 col-mb-12 block section-class">
 			<div class="title-block title-block-bg">
 				<h3>Aulas</h3>
 				<a href="">Ver Todas</a>
 			</div>
-			<div class="col-pc-12 col-mb-12 content-block">
-				<div class="col-pc-1 col-mb-1 slider">
+			<div class="col-pc-12 col-tb-12 col-mb-12 content-block">
+				<div class="col-pc-1 col-tb-1 col-mb-1 slider">
 					<i class="fa fa-chevron-left"></i>
 				</div>
-				<div class="col-pc-10 col-mb-12 info-block">
-					<div class="col-pc-12 col-mb-12 head-info-block">
+				<div class="col-pc-10 col-tb-12 col-mb-12 info-block">
+					<div class="col-pc-12 col-tb-12 col-mb-12 head-info-block">
 						<h3>Sistemas para Internet</h3>
 						<div class="notify">
 							<span>2</span>
 							<p>notificações</p>
 						</div>
 					</div>
-					<div class="col-pc-12 col-mb-12 rel-class">
-						<div class="col-pc-4 col-mb-4">
-							<div class="col-pc-6 col-mb-6 data-class">
+					<div class="col-pc-12 col-tb-12 col-mb-12 rel-class">
+						<div class="col-pc-4 col-tb-4 col-mb-4">
+							<div class="col-pc-6 col-tb-6 col-mb-6 data-class">
 								<p class="title-data-class">
 									SALA
 								</p>
@@ -119,7 +117,7 @@
 									602
 								</p>
 							</div>
-							<div class="col-pc-6 col-mb-6 data-class">
+							<div class="col-pc-6 col-tb-6 col-mb-6 data-class">
 								<p class="title-data-class">
 									DATA
 								</p>
@@ -127,7 +125,7 @@
 									30/06/2016
 								</p>
 							</div>
-							<div class="col-pc-6 col-mb-6 data-class">
+							<div class="col-pc-6 col-tb-6 col-mb-6 data-class">
 								<p class="title-data-class">
 									FALTAS
 								</p>
@@ -135,7 +133,7 @@
 									06
 								</p>
 							</div>
-							<div class="col-pc-6 col-mb-6 data-class">
+							<div class="col-pc-6 col-tb-6 col-mb-6 data-class">
 								<p class="title-data-class">
 									AULA
 								</p>
@@ -144,46 +142,47 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-pc-7 space-pc-1 col-mb-7 space-mb-1 notify-feature">
-							<figure class="col-pc-3 col-mb-3">
+						<div class="col-pc-7 space-pc-1 col-tb-7 space-tb-1 col-mb-7 space-mb-1 notify-feature">
+							<figure class="col-pc-3 col-tb-3 col-mb-3">
 								<img src="img/Koala.jpg" alt="Foto Professor">
 								<figcaption>Ivna</figcaption>
 							</figure>
-							<div class="col-pc-8 space-pc-05 col-mb-8 space-mb-05 reminder">
+							<div class="col-pc-8 space-pc-05 col-tb-8 space-tb-05 col-mb-8 space-mb-05 reminder">
 								<p>Traga caneta sem ponta.</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-pc-1 col-mb-1 slider">
+				<div class="col-pc-1 col-tb-1 col-mb-1 slider">
 					<i class="fa fa-chevron-right"></i>
 				</div>
 			</div>
 		</section>
-		<section class="col-pc-4 space-pc-05 col-mb-12 block-nobg">
+
+		<section class="col-pc-4 space-pc-05 col-tb-12 col-mb-12 block-nobg">
 			<div class="title-block">
 				<h3>Favoritos</h3>
 			</div>
-			<div class="col-pc-12 col-mb-12 content-block content-favorites">
-				<div class="col-pc-3 col-mb-3 favorites">
+			<div class="col-pc-12 col-tb-12 col-mb-12 content-block content-favorites">
+				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
 						<figurecaption>Favoritos</figurecaption>
 					</figure>
 				</div>
-				<div class="col-pc-3 col-mb-3 favorites">
+				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
 						<figurecaption>Favoritos</figurecaption>
 					</figure>
 				</div>
-				<div class="col-pc-3 col-mb-3 favorites">
+				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
 						<figurecaption>Favoritos</figurecaption>
 					</figure>
 				</div>
-				<div class="col-pc-3 col-mb-3 favorites">
+				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
 						<figurecaption>Favoritos</figurecaption>
@@ -191,24 +190,24 @@
 				</div>
 			</div>
 		</section>
-		<section class="col-pc-12 block block-events">
+		<section class="col-pc-12 col-tb-312 block block-events">
 			<div class="title-block title-block-bg">
 				<h3>EVENTOS</h3>
 			</div>
-			<div class="col-pc-12 content-block">
-				<div class="col-pc-12 rel-events">
-					<div class="col-pc-3 block col-mb-6">
+			<div class="col-pc-12 col-tb-12 content-block">
+				<div class="col-pc-12 col-tb-12 rel-events">
+					<div class="col-pc-3 col-tb-6 block col-mb-6">
 						<div class="title-block title-block-bg1">
 							<p>EVENTOS</p>
 						</div>
-						<div class="col-pc-12 content-block">
+						<div class="col-pc-12 col-tb-12 content-block">
 							<h3>19/06 - Senac RS Unidade 1</h3>
 							<p>Blablabla muito legal e blablabla</p>
 
 							<a href="#">Ir para o evento</a>
 						</div>
 					</div>
-					<div class="col-pc-3 block space-pc-05 col-mb-6">
+					<div class="col-pc-3 block space-pc-05 col-tb-6 col-mb-6">
 						<div class="title-block title-block-bg2">
 							<p>EVENTOS</p>
 						</div>
@@ -219,7 +218,7 @@
 							<a href="#">Ir para o evento</a>
 						</div>
 					</div>
-					<div class="col-pc-3 block space-pc-05 col-mb-6">
+					<div class="col-pc-3 block space-pc-05 col-tb-6 col-mb-6">
 						<div class="title-block title-block-bg3">
 							<p>EVENTOS</p>
 						</div>
@@ -238,18 +237,31 @@
 				</div>
 			</div>
 		</section>
-	</div>
-</main>
+	</main>
+</div>
 
 	<script type="text/javascript" src="JS/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript">
 		$(".dropdown > a").click(function(e) {
+			// Retira ação padrão do A
 			e.preventDefault();
 
+			// Mostra/esconde os ULs que são irmãos do A
 			$(this).siblings("ul").slideToggle(300);
+			// Procura os elementos que tenham a classe .float-r e adiciona/tira as classes fa-plus e fa-minus
 			$(this).find(".float-r").toggleClass("fa-plus fa-minus");
 		});
 
+		$("#menu-button").click(function() {
+			// Reveza as classes closed e opened
+			$(".side-nav").toggleClass("closed opened");
+
+			// Reveza as classes col-pc-10 e col-pc-12
+			$(".container").toggleClass("col-pc-10 col-pc-12");
+
+			// Mostra/esconde os elementos que tenha a classe .menu-item-text
+			$(".side-nav .menu-item-text").toggle();
+		});
 	</script>
 
 </body>

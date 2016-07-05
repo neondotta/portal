@@ -88,37 +88,8 @@
 
 /*********************** FIM TAMAMNHO *********************/
 
-	.data-class{
-		float:left;
-	}
 
-
-	.favorites{
-		float:left;
-	}
-
-	.content-favorites{
-		overflow: hidden;
-	}
-
-	.rel-events{
-		
-	}
-		.rel-events .block{
-			box-shadow: none;
-			float: left;
-			padding:0;
-		}
-		.rel-events > .block .title-block{
-			height: 60px;
-			display:block;
-		}
-		.rel-events > .block .title-block-bg1{
-			height: 120px;
-		}
-		.rel-events .content-block{
-			display:none;
-		}
+	
 	.see-events{
 		display:none;
 	}
