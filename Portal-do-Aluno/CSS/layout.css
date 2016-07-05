@@ -111,7 +111,7 @@ a{
 .center-auto{
     display: block;
     float:none;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 .float-r{
     float:right;
@@ -187,11 +187,7 @@ a{
   position:relative;
 }
 
-    .header img.logo{
-        height: 50px;
-        margin: 5px 0 0 5px;
-        width: 60px;
-    }
+    .header img.logo {margin: 5px 0 0 5px;}
 
     .header .perfil{
         float:right;
@@ -404,7 +400,7 @@ a{
         }
             .block-events .content-block .content-block {position:relative;}
             .block-events .content-block .content-block p{
-                font-weight: bold; 
+                font-weight: bold;
                 padding:20px 0;
 
             }
@@ -419,7 +415,7 @@ a{
             position:absolute;
             right:4%;
             text-align: center;
-        } 
+        }
         .block-events .see-events a{
             font-size: 1em;
             position:absolute;
