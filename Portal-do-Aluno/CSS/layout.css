@@ -199,8 +199,6 @@ a{
         .header .perfil:hover {background-color: #e8e8e8;}
         .header .perfil img{
             border-radius: 50%;
-            height: 50px;
-            width: 50px;
             float: left;
             margin: 0 8px 0 5px;
         }
