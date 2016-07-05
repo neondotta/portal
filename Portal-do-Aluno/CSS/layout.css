@@ -183,44 +183,41 @@ a{
 
 .header{
   border-bottom: 1px #c6c6c6 solid;
-  height: 60px;
-  position:relative;
+  min-height: 80px;
+  position: relative;
 }
 
-    .header img.logo {margin: 5px 0 0 5px;}
+    .header img.logo {margin: 20.5px 0 0;}
 
     .header .perfil{
-        float:right;
+        float: right;
         position:relative;
-        height: 100%;
-        padding: 5px 15px;
+        padding: 25px 5px;
         cursor: pointer;
     }
         .header .perfil:hover {background-color: #e8e8e8;}
         .header .perfil img{
             border-radius: 50%;
             float: left;
-            margin: 0 8px 0 5px;
+            margin: 0 10px;
         }
         .header .perfil i{
             font-size: .8em;
             float: right;
-            line-height: 50px;
-            margin-left: 5px;
-            padding: 0 3px;
+			line-height: 30px;
         }
-        .data-perfil{
-            float:left;
-            line-height: 20px;
-            padding:5px 0 0 0;
+
+        .header .data-perfil {
+            float: left;
+			text-align: right;
         }
-            .header .data-perfil p{
-                text-align: right;
-                font-size: .8em;
-            }
-                .data-perfil p.reg_student{
-                    color:#c6c6c6;
-                }
+			.header .data-perfil > p {line-height: 1em;}
+
+			.header .data-perfil > .reg-username {font-size: 1em;}
+			.header .data-perfil > .reg-id {
+				color: #6b6b6b;
+				font-size: 0.875em;
+			}
 
 /**********************      MAIN:    ********************/
 
