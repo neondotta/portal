@@ -98,90 +98,11 @@ body{
   .space-pc-0 {
     margin-left: auto;
   }
+
+}
+
+
 /*********************** FIM TAMAMNHO *********************/
-/*********************** PULL E PUSH *********************/
-
-.col-pc-pull-12 {
-  right: 100%;
-}
-.col-pc-pull-11 {
-  right: 91.66666667%;
-}
-.col-pc-pull-10 {
-  right: 83.33333333%;
-}
-.col-pc-pull-9 {
-  right: 75%;
-}
-.col-pc-pull-8 {
-  right: 66.66666667%;
-}
-.col-pc-pull-7 {
-  right: 58.33333333%;
-}
-.col-pc-pull-6 {
-  right: 50%;
-}
-.col-pc-pull-5 {
-  right: 41.66666667%;
-}
-.col-pc-pull-4 {
-  right: 33.33333333%;
-}
-.col-pc-pull-3 {
-  right: 25%;
-}
-.col-pc-pull-2 {
-  right: 16.66666667%;
-}
-.col-pc-pull-1 {
-  right: 8.33333333%;
-}
-.col-pc-pull-0 {
-  right: auto;
-}
-.col-pc-push-12 {
-  left: 100%;
-}
-.col-pc-push-11 {
-  left: 91.66666667%;
-}
-.col-pc-push-10 {
-  left: 83.33333333%;
-}
-.col-pc-push-9 {
-  left: 75%;
-}
-.col-pc-push-8 {
-  left: 66.66666667%;
-}
-.col-pc-push-7 {
-  left: 58.33333333%;
-}
-.col-pc-push-6 {
-  left: 50%;
-}
-.col-pc-push-5 {
-  left: 41.66666667%;
-}
-.col-pc-push-4 {
-  left: 33.33333333%;
-}
-.col-pc-push-3 {
-  left: 25%;
-}
-.col-pc-push-2 {
-  left: 16.66666667%;
-}
-.col-pc-push-1 {
-  left: 8.33333333%;
-}
-.col-pc-push-0 {
-  left: auto;
-}
-
-}
-
 
 a{
     text-decoration: none;
@@ -210,7 +131,7 @@ a{
     width:16px;
     text-align: center;
 }
-.active{
+.active, .active a{
     color:#5392d8;
     font-weight: bold;
 }
@@ -324,14 +245,12 @@ a{
             }
                 .perfil .nav-perfil ul li a{
                     padding:0 10px;
-                    color:#000;
                 }
                     .perfil .nav-perfil ul li:hover{
                         background:#fff;
                     }
                     .perfil .nav-perfil ul li:hover a{
                         color:#5392d8;
-                        font-weight: bold;
                     }
                 .perfil .nav-perfil i{
                     float:none;
@@ -594,3 +513,33 @@ a{
             color:#fff;
             padding:10px 15px;
         }
+
+/********************* DADOS ****************************/
+
+.title-data{
+  text-transform: uppercase;
+  font-size: 1.1em;
+  border-bottom: 2px solid #f78b1f;
+}
+  .title-data p{
+    padding-left: 10px;
+  }
+.content-data{
+  padding:10px 0;
+}
+  .data-college{
+    display:block;
+    overflow:hidden;
+  }
+    .info-data{
+      padding:15px 10px 15px 0;
+    }
+    .info-data .title-data {
+      border-bottom: 2px solid #8f8f8f;
+      font-size: .8em;
+      padding:5px 0 0 0;
+      font-weight: bold;
+    }
+    .info-data .content-data p{
+      padding:5px 15px;
+    }
