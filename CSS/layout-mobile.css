@@ -85,8 +85,87 @@
 	.space-mb-0 {
 		margin-left: auto;
 	}
-
 /*********************** FIM TAMAMNHO *********************/
+.col-mb-pull-12 {
+  right: 100%;
+}
+.col-mb-pull-11 {
+  right: 91.66666667%;
+}
+.col-mb-pull-10 {
+  right: 83.33333333%;
+}
+.col-mb-pull-9 {
+  right: 75%;
+}
+.col-mb-pull-8 {
+  right: 66.66666667%;
+}
+.col-mb-pull-7 {
+  right: 58.33333333%;
+}
+.col-mb-pull-6 {
+  right: 50%;
+}
+.col-mb-pull-5 {
+  right: 41.66666667%;
+}
+.col-mb-pull-4 {
+  right: 33.33333333%;
+}
+.col-mb-pull-3 {
+  right: 25%;
+}
+.col-mb-pull-2 {
+  right: 16.66666667%;
+}
+.col-mb-pull-1 {
+  right: 8.33333333%;
+}
+.col-mb-pull-0 {
+  right: auto;
+}
+.col-mb-push-12 {
+  left: 100%;
+}
+.col-mb-push-11 {
+  left: 91.66666667%;
+}
+.col-mb-push-10 {
+  left: 83.33333333%;
+}
+.col-mb-push-9 {
+  left: 75%;
+}
+.col-mb-push-8 {
+  left: 66.66666667%;
+}
+.col-mb-push-7 {
+  left: 58.33333333%;
+}
+.col-mb-push-6 {
+  left: 50%;
+}
+.col-mb-push-5 {
+  left: 41.66666667%;
+}
+.col-mb-push-4 {
+  left: 33.33333333%;
+}
+.col-mb-push-3 {
+  left: 25%;
+}
+.col-mb-push-2 {
+  left: 16.66666667%;
+}
+.col-mb-push-1 {
+  left: 8.33333333%;
+}
+.col-mb-push-0 {
+  left: auto;
+}
+
+
 
 	.see-events{
 		display:none;
