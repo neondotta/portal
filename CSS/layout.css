@@ -473,46 +473,64 @@ a{
 
 /********************* TABELAS ****************************/
 
-/******* BOLETOS *********/
-
-.boletos table{
+table{
     border:1px solid #c6c6c6;
     border-collapse: 0;
     border-spacing: 0;
     text-align: center;
     text-transform: uppercase;
 }
-.boletos thead{
+thead{
     background:#999;
     color:#fff;
 }
-.boletos tbody{
+tbody{
     font-size:.8em;
 }
 
-.boletos tr{
+tr{
     border:1px solid #c6c6c6;
 }
-.boletos tbody tr:nth-child(even){
+tbody tr:nth-child(even){
     background: #c6c6c6;
 }
-    .boletos tr td{
+    tr td{
         padding: 15px;
     }
-        .boletos tr td.atrasado{
-            color:#f00;
-        }
-        .boletos tr td.pendente{
-            color:#960;
-        }
-        .boletos tr td.pago{
-            color:#0f0;
-        }
-        .boletos tr td a{
-            background:#f78b1f;
-            color:#fff;
-            padding:10px 15px;
-        }
+    tr td a{
+        background:#f78b1f;
+        color:#fff;
+        padding:10px 15px;
+    }
+
+/******* TABLE BOLETOS *********/
+
+.boletos tr td.atrasado{
+    color:#f00;
+}
+.boletos tr td.pendente{
+    color:#960;
+}
+.boletos tr td.pago{
+    color:#0f0;
+}
+
+/******* TABLE Biblioteca *********/
+
+tr td a.alugado{
+    background:#333;
+    color:#fff;
+    padding:10px 15px;
+}
+
+.biblioteca tr td.avaiable{
+    color:#070;
+    font-weight:bold;
+}
+.biblioteca tr td.not-avaiable{
+    color:#900;
+    font-weight:bold;
+}
 
 /********************* DADOS ****************************/
 
@@ -543,3 +561,56 @@ a{
     .info-data .content-data p{
       padding:5px 15px;
     }
+
+
+/********************* FORMULARIOS ****************************/
+
+.group-form{
+    padding:15px 10px 10px 10px;
+}
+    .group-form label{
+        font-size:1em;
+        font-weight:bold;
+        padding-left:5px;
+        text-transform:uppercase;
+    }
+    .group-form input, .group-form select{
+        border-radius:3px;
+        border: 1px solid #8f8f8f;
+        font-size:1em;
+        height:30px;
+        padding:10px;
+    }
+    .group-form select{
+        padding:0 5px;
+    }
+
+    input[type="submit"]{
+        background:#f78b1f;
+        border-radius:3px;
+        border:none;
+        bottom: 10px;
+        color: #fff;
+        display:block;
+        font-size:1.1em;
+        height:40px;
+        position: absolute;
+        right: 10px;
+    }
+
+/********************* Biblioteca ****************************/
+
+.filter-book{
+    overflow:hidden;
+    position:relative;
+}
+
+fieldset{
+    border:1px solid #8f8f8f;
+}
+legend{
+    color:#555;
+    font-size:1.2em;
+    margin-left:15px;
+    text-transform:uppercase;
+}

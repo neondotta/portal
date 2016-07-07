@@ -114,74 +114,107 @@
 							</a>
 						</li>
 					</ul>
-				</nav
+				</nav>
 			</div>
 		</div>
 	</header>
 	<main class="col-pc-11 col-tb-11 col-mb-11 center-auto">
 		<div class="breadcrumb">
-			<a href="index.html">Página inicial</a> / <a href="#">Financeiro</a> / <a href="boleto.html" class="destaque">Boleto</a>
+			<a href="index.html">Página inicial</a> / <a href="#">Biblioteca</a> / <a href="boleto.html" class="destaque">Alugar</a>
 		</div>
 		<section class="col-pc-12 col-mb-12 col-tb-12 block">
-			
+		
 			<div class="title-block title-block-bg">
-				<h3>Boletos</h3>
+				<h3>Biblioteca - Alugar</h3>
 			</div>
-			<div class="content-block boletos">
+			<div class="content-block">
+				<div class="col-pc-11 filter-book center-auto">
+					<fieldset class="col-pc-12 fieldset-filter">
+						<legend>Filtro</legend>
+						<form action="">
+							<div class="col-pc-4 group-form">
+								<label for="NameBook">Nome do Livro</label>
+								<input type="text" class="col-pc-12" id="NameBook" placeholder="Nome do livro">
+							</div>
+							<div class="col-pc-4 group-form">
+								<label for="AuthorBook">Autor do Livro</label>
+								<input type="text" class="col-pc-12" id="AuthorBook" placeholder="Autor do livro">
+							</div>
+							<div class="col-pc-4 group-form">
+								<label for="CompanyBook">Editora do Livro</label>
+								<input type="text" class="col-pc-12" id="CompanyBook" placeholder="Editora do livro">
+							</div>
+							<div class="col-pc-2 group-form">
+								<label for="CompanyBook">Ano</label>
+								<input type="text" class="col-pc-12" id="CompanyBook" placeholder="Ano">
+							</div>
+							<div class="col-pc-4 group-form">
+								<label for="CompanyBook">STATUS</label>
+								<select name="status" id="" class="col-pc-12">
+									<option value="Todos">Todos</option>
+									<option value="Disponível">Disponível</option>
+									<option value="Alugado">Alugado</option>
+								</select>
+							</div>
+
+							<input type="submit" class="col-pc-3" id="searchBook" value="Pesquisar">
+
+						</form>
+					</fieldset>
+				</div>
+				<div class="content-block biblioteca">
 				
-				<table class="col-pc-12 col-mb-12 col-tb-12">
-					<thead>
-						<tr>
-							<td class="col-pc-05 col-mb-05 col-tb-05"><input type="checkbox"></td>
-							<td>PARCELA</td>
-							<td>SITUAÇÃO</td>
-							<td>DESCRIÇÃO</td>
-							<td>RESPONSÁVEL</td>
-							<td>VALOR</td>
-							<td>VENCIMENTO</td>
-							<td>OPÇÕES</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="col-pc-05 col-mb-05 col-tb-05"><input type="checkbox"></td>
-							<td>07/2016</td>
-							<td class="pendente">PENDENTE</td>
-							<td>MENSALIDADE</td>
-							<td>JOÃO DA SILVA</td>
-							<td>R$809,99</td>
-							<td>20/07/2016</td>
-							<td>
-								<a href="#">PAGAR</a>
-							</td>
-						</tr>
-						<tr>
-							<td class="col-pc-05 col-mb-05 col-tb-05"><input type="checkbox"></td>
-							<td>06/2016</td>
-							<td class="atrasado">ATRASADO</td>
-							<td>MENSALIDADE</td>
-							<td>JOÃO DA SILVA</td>
-							<td>R$809,99</td>
-							<td>20/06/2016</td>
-							<td>
-								<a href="#">PAGAR</a>
-							</td>
-						</tr>
-						<tr>
-							<td class="col-pc-05 col-mb-05 col-tb-05"><input type="checkbox"></td>
-							<td>05/2016</td>
-							<td class="pago">PAGO</td>
-							<td>MENSALIDADE</td>
-							<td>JOÃO DA SILVA</td>
-							<td>R$809,99</td>
-							<td>20/05/2016</td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
+					<table class="col-pc-12 col-mb-12 col-tb-12">
+						<thead>
+							<tr>
+								<td>Nome</td>
+								<td>Autor</td>
+								<td>Qtd de Páginas</td>
+								<td>Ano</td>
+								<td>Status</td>
+								<td>OPÇÕES</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>PHP DA LOUCURA</td>
+								<td>João Pavão</td>
+								<td>344</td>
+								<td>2014</td>
+								<td class="avaiable">Disponível</td>
+								<td>
+									<a href="#">RETIRAR</a>
+									<a href="#">RESERVAR</a>
+								</td>
+							</tr>
+							<tr>
+								<td>JS NINJA</td>
+								<td>Juca Silva</td>
+								<td>254</td>
+								<td>2015</td>
+								<td class="not-avaiable">Alugado</td>
+								<td>
+									<a href="#" class="alugado">RETIRAR</a>
+									<a href="#">RESERVAR</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Html + Css</td>
+								<td>PAGO</td>
+								<td>440</td>
+								<td>2014</td>
+								<td class="avaiable">Disponível</td>
+								<td>
+									<a href="#">RETIRAR</a>
+									<a href="#">RESERVAR</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
 
 			</div>
-
 		</section>
 
 	</main>
