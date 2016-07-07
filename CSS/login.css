@@ -60,3 +60,13 @@ body {
         height: 30px;
         width: 105px;
     }
+
+@media screen and (max-width: 767px) {
+    #login > h3,
+    #login > form > a {text-align: center;}
+
+    #login > form > a,
+    #login > form > button {width: 100%;}
+
+    #login > form > a {line-height: 30px;}
+}
