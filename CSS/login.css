@@ -43,7 +43,13 @@ body {
         #login > form > input[type="password"] {margin: -1px 0 10px;}
 
     #login > form > a,
-    #login > form > button {font-size: 0.857em;}
+    #login > form > a.submit {font-size: 0.857em;}
+
+    #login > form > a.submit {
+        line-height:30px;
+        text-decoration:none;
+        text-align:center;
+    }
 
     #login > form > a {
         color: #005594;
@@ -52,7 +58,7 @@ body {
         margin-top: 8px;
     }
 
-    #login > form > button {
+    #login > form > a.submit {
         background-color: #f78b1f;
         border: none;
         color: #FFF;
@@ -67,7 +73,8 @@ body {
     #login > form > a {text-align: center;}
 
     #login > form > a,
-    #login > form > button {width: 100%;}
+    #login > form > a.submit {width: 100%;}
 
     #login > form > a {line-height: 30px;}
 }
+
