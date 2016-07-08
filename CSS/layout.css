@@ -108,6 +108,15 @@ a{
     text-decoration: none;
     color:#000;
 }
+fieldset{
+    border:1px solid #8f8f8f;
+}
+legend{
+    color:#555;
+    font-size:1.2em;
+    margin-left:15px;
+    text-transform:uppercase;
+}
 .center-auto{
     display: block;
     float:none;
@@ -295,9 +304,9 @@ a{
             font-size: 0.875em;
             padding: 0 20px;
             text-decoration: underline;
-			-webkit-transition: background-color .3s ease;
-			-moz-transition: background-color .3s ease;
-			transition: background-color .3s ease;
+      			-webkit-transition: background-color .3s ease;
+      			-moz-transition: background-color .3s ease;
+      			transition: background-color .3s ease;
         }
 
         .title-block-bg a:hover{
@@ -452,12 +461,12 @@ a{
 
             }
             .block-events .content-block .content-block a{
-                background:#e6e6e6;
+                background:#f78b1f;
                 padding:10px;
                 float:right;
             }
         .block-events .see-events{
-            background:#eee;
+            background:#c6c6c6;
             height:100%;
             position:absolute;
             right:4%;
@@ -503,6 +512,46 @@ tbody tr:nth-child(even){
         padding:10px 15px;
     }
 
+.table{
+    border:2px solid #c6c6c6;
+    border-collapse: 0;
+    border-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.thead{
+    background:#999;
+    color:#fff;
+    text-align: center;
+}
+.tbody{
+    font-size:.8em;
+}
+
+.lin{
+}
+.tbody .lin:nth-child(2n+1){
+    background: #c6c6c6;
+}
+    .lin div.row{
+        padding: 15px;
+    }
+      div.row a{
+          background:#f78b1f;
+          color:#fff;
+          padding:10px 15px;
+      }
+      div.row:hover i{
+          color:#f78b1f;
+      }
+        div.row.closed{
+          display:none;
+        }
+        div.info-rent{
+            padding:15px;
+            text-align: left;
+        }
+
 /******* TABLE BOLETOS *********/
 
 .boletos tr td.atrasado{
@@ -512,6 +561,16 @@ tbody tr:nth-child(even){
     color:#960;
 }
 .boletos tr td.pago{
+    color:#0f0;
+}
+
+.boletos .lin .row a.atrasado{
+    color:#f00;
+}
+.boletos .lin .row a.pendente{
+    color:#960;
+}
+.boletos .lin .row a.pago{
     color:#0f0;
 }
 
@@ -528,6 +587,20 @@ tr td a.alugado{
     font-weight:bold;
 }
 .biblioteca tr td.not-avaiable{
+    color:#900;
+    font-weight:bold;
+}
+.lin .row a.alugado{
+    background:#333;
+    color:#fff;
+    padding:10px 15px;
+}
+
+.biblioteca .lin .row .avaiable{
+    color:#070;
+    font-weight:bold;
+}
+.biblioteca .lin .row .not-avaiable{
     color:#900;
     font-weight:bold;
 }
@@ -605,12 +678,12 @@ tr td a.alugado{
     position:relative;
 }
 
-fieldset{
-    border:1px solid #8f8f8f;
-}
-legend{
-    color:#555;
-    font-size:1.2em;
-    margin-left:15px;
-    text-transform:uppercase;
-}
+
+
+
+
+/*********** circle percentage ******************/
+
+.clearfix:before,.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
