@@ -526,11 +526,13 @@ tbody tr:nth-child(even){
 }
 .tbody{
     font-size:.8em;
+        text-align:center;
 }
 
 .lin{
+    overflow:hidden;
 }
-.tbody .lin:nth-child(2n+1){
+.lin:nth-child(even){
     background: #c6c6c6;
 }
     .lin div.row{
@@ -550,6 +552,7 @@ tbody tr:nth-child(even){
         div.info-rent{
             padding:15px;
             text-align: left;
+            background:#f1f1f1;
         }
 
 /******* TABLE BOLETOS *********/
