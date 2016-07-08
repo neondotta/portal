@@ -443,7 +443,7 @@ a{
             font-weight: normal;
         }
         .block-events .block{
-            box-shadow: 6px 6px 20px 1px #000;
+            box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, .2);
         }
             .block-events .content-block .content-block {position:relative;}
             .block-events .content-block .content-block p{
@@ -614,3 +614,35 @@ legend{
     margin-left:15px;
     text-transform:uppercase;
 }
+
+/* Imposto de renda */
+.ir-section div[class^="col"] {float: left;}
+
+.ir-section .content-block {
+	border-bottom: 1px solid #CCC;
+	clear: both;
+	overflow: hidden;
+	font-size: .800em;
+}
+	.ir-section .content-block:last-child {border-bottom: none;}
+
+.ir-section .content-block.content-block-emphasis {font-size: 1em;}
+.ir-section .content-block.content-block-header {background-color: #F1F1F1;}
+
+.ir-section form {float: left;}
+	.ir-section form > label {
+		display: block;
+		margin-bottom: 5px;
+	}
+	.ir-section form > select {
+		padding: 5px 10px;
+	}
+
+	.ir-section .print {
+		background-color: #f78b1f;
+		color: #FFF;
+		float: right;
+		font-size: 14px;
+		margin-top: 7px;
+		padding: 10px 15px;
+	}
