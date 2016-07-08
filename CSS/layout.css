@@ -699,6 +699,9 @@ legend{
 }
 	.ir-section .content-block:last-child {border-bottom: none;}
 
+.ir-section .content-block.content-block-strip:nth-child(odd) {background-color: #F9F9F9;}
+.ir-section .content-block.content-block-strip:hover {background-color: #eaeaea;}
+
 .ir-section .content-block.content-block-emphasis {font-size: 1em;}
 .ir-section .content-block.content-block-header {background-color: #F1F1F1;}
 
