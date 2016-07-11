@@ -172,7 +172,11 @@
 }
 
 @media screen and (max-width: 991px) {
-    .side-nav {display: none;}
+ 
+    .show-nav-mb{position:fixed;padding:5px 15px;color:#f78b1f; font-weight: bold;z-index: 1; background:#ddd;}
+    .show-nav-mb:hover{color:#f78b1f;}
+    .side-nav{display: none;}
+
 
     .section-class .info-block{
         padding:15px;
@@ -240,10 +244,18 @@
 			display:none;
 		}
 
+    .hidden-mb {display: none;}
+    .show-mb {display: block;}
 
     div.info-data{
         display:inline-block;
         float:left;
     }
+    .info-pay{
+        display:none;
+        overflow:hidden;
+    }
+
+
 
 }

@@ -11,7 +11,10 @@
 </head>
 <body>
 
-<section class="col-pc-2 side-nav opened">
+<!-- <div class="pc-hidden show-nav-mb">
+	<i class="fa fa-reorder"></i>
+</div> -->
+<section class="col-pc-2 side-nav opened hidden-mb">
 	<div class="header-nav" id="menu-button">
 		<p>
 			<i class="fa fa-reorder"></i>
@@ -27,6 +30,20 @@
 					<span class="menu-item-text">Página Inicial</span>
 				</a>
 			</li>
+			<li class="dropdown">
+				<a href="">
+					<i class="fa fa-book"></i>
+					<span class="menu-item-text">Aulas</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="boletim.html">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Notas</span>
+						</a>
+					</li>
+				</ul>
 			<li class="dropdown">
 				<a href="">
 					<i class="fa fa-book"></i>
@@ -67,7 +84,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="ir.html">
 							<i class="fa fa-institution"></i>
 							<span class="menu-item-text">Comprovante de I.R</span>
 						</a>
@@ -156,11 +173,11 @@
 						<h3>Sistemas para Internet</h3>
 						<div class="notify">
 							<span>2</span>
-							<p>notificações</p>
+							<p class="hidden-mb">notificações</p>
 						</div>
 					</div>
 					<div class="col-pc-12 col-tb-12 col-mb-12 rel-class">
-						<div class="col-pc-4 col-tb-4 col-mb-4">
+						<div class="col-pc-4 col-tb-12 col-mb-12">
 							<div class="col-pc-6 col-tb-6 col-mb-6 data-class">
 								<p class="title-data-class">
 									SALA
@@ -194,7 +211,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-pc-7 space-pc-1 col-tb-7 space-tb-1 col-mb-7 space-mb-1 notify-feature">
+						<div class="col-pc-7 space-pc-1 col-tb-12 col-mb-12 notify-feature hidden-mb">
 							<figure class="col-pc-3 col-tb-3 col-mb-3">
 								<img src="img/Koala.jpg" alt="Foto Professor">
 								<figcaption>Ivna</figcaption>
@@ -219,25 +236,25 @@
 				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
-						<figurecaption>Favoritos</figurecaption>
+						<figcaption>Favoritos</figcaption>
 					</figure>
 				</div>
 				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
-						<figurecaption>Favoritos</figurecaption>
+						<figcaption>Favoritos</figcaption>
 					</figure>
 				</div>
 				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
-						<figurecaption>Favoritos</figurecaption>
+						<figcaption>Favoritos</figcaption>
 					</figure>
 				</div>
 				<div class="col-pc-3 col-tb-3 col-mb-3 favorites">
 					<figure>
 						<img src="img/Koala.jpg" alt="Favorito">
-						<figurecaption>Favoritos</figurecaption>
+						<figcaption>Favoritos</figcaption>
 					</figure>
 				</div>
 			</div>
@@ -320,6 +337,20 @@
 
 			// Mostra/esconde os elementos que tenha a classe .menu-item-text
 			$(".side-nav .menu-item-text").toggle();
+		});
+
+		$(".show-rent").click(function(){
+
+			$(this).siblings("div.info-rent").slideToggle(300);
+
+			$(this).find("i").toggleClass("fa-plus fa-minus");
+
+		});
+
+		$(".show-nav-mb").click(function(){
+
+			$(this).siblings("section.side-nav").toggleClass("hidden-mb show-mb");
+
 		});
 	</script>
 

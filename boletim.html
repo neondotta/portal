@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 <section class="col-pc-2 side-nav opened">
 	<div class="header-nav" id="menu-button">
 		<p>
@@ -22,19 +23,47 @@
 	<nav class="col-pc-12">
 		<ul>
 			<li>
-				<a href="index.html">
+				<a href="index.html" class="active">
 					<i class="fa fa-home"></i>
 					<span class="menu-item-text">Página Inicial</span>
 				</a>
 			</li>
-			<li>
+			<li class="dropdown">
+				<a href="">
+					<i class="fa fa-book"></i>
+					<span class="menu-item-text">Aulas</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="boletim.html" class="active">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Notas</span>
+						</a>
+					</li>
+				</ul>
+			<li class="dropdown">
 				<a href="">
 					<i class="fa fa-book"></i>
 					<span class="menu-item-text">Biblioteca</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
 				</a>
-			</li>
+				<ul>
+					<li>
+						<a href="alugar.html">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Alugar</span>
+						</a>
+					</li>
+					<li>
+						<a href="retirado.html">
+							<i class="fa fa-institution"></i>
+							<span class="menu-item-text">Retirados</span>
+						</a>
+					</li>
+				</ul>
 			<li>
-				<a href="dados.html" class="active">
+				<a href="dados.html">
 					<i class="fa fa-user"></i>
 					<span class="menu-item-text">Dados Cadastrais</span>
 				</a>
@@ -53,7 +82,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="ir.html">
 							<i class="fa fa-institution"></i>
 							<span class="menu-item-text">Comprovante de I.R</span>
 						</a>
@@ -120,7 +149,7 @@
 	</header>
 	<main class="col-pc-11 col-tb-11 col-mb-11 center-auto">
 		<div class="breadcrumb">
-			<a href="index.html">Página inicial</a> / <a href="#">Financeiro</a> / <a href="ir.html" class="destaque">Comprovante de I.R.</a>
+			<a href="index.html">Página inicial</a> / <a href="ir.html" class="destaque">Notas</a>
 		</div>
 
 		<section class="col-pc-12 col-mb-12 col-tb-12 block ir-section">

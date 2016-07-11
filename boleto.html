@@ -27,12 +27,40 @@
 					<span class="menu-item-text">Página Inicial</span>
 				</a>
 			</li>
-			<li>
+			<li class="dropdown">
+				<a href="">
+					<i class="fa fa-book"></i>
+					<span class="menu-item-text">Aulas</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="boletim.html">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Notas</span>
+						</a>
+					</li>
+				</ul>
+			<li class="dropdown">
 				<a href="">
 					<i class="fa fa-book"></i>
 					<span class="menu-item-text">Biblioteca</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
 				</a>
-			</li>
+				<ul>
+					<li>
+						<a href="alugar.html">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Alugar</span>
+						</a>
+					</li>
+					<li>
+						<a href="retirado.html">
+							<i class="fa fa-institution"></i>
+							<span class="menu-item-text">Retirados</span>
+						</a>
+					</li>
+				</ul>
 			<li>
 				<a href="dados.html">
 					<i class="fa fa-user"></i>
@@ -53,7 +81,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="ir.html">
 							<i class="fa fa-institution"></i>
 							<span class="menu-item-text">Comprovante de I.R</span>
 						</a>
@@ -132,50 +160,111 @@
 				<div class="col-pc-12 col-mb-12 col-tb-12 table">
 					<div class="thead">
 						<div class="lin">
-							<div class="col-pc-1 col-mb-1 col-tb-1 row"><input type="checkbox"></div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">PARCELA</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">SITUAÇÃO</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">DESCRIÇÃO</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">RESPONSÁVEL</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">VALOR</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">VENCIMENTO</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">OPÇÕES</div>
+							<div class="col-pc-1 col-mb-1 col-tb-1 row hidden-mb"><input type="checkbox"></div>
+							<div class="col-pc-1 col-mb-3 col-tb-1 row">PARCELA</div>
+							<div class="col-pc-1 col-mb-4 col-tb-1 row">SITUAÇÃO</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">DESCRIÇÃO</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">RESPONSÁVEL</div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">VALOR</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">VENCIMENTO</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">OPÇÕES</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row pc-hidden"></div>
 						</div>
 					</div>
 					<div class="tbody">
 						<div class="lin">
-							<div class="col-pc-1 col-mb-1 col-tb-1 row"><input type="checkbox"></div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">07/2016</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row pendente">PENDENTE</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">MENSALIDADE</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">JOÃO DA SILVA</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">R$809,99</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">20/07/2016</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">
+							<div class="col-pc-1 col-mb-1 col-tb-1 row hidden-mb"><input type="checkbox"></div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">07/2016</div>
+							<div class="col-pc-1 col-mb-4 col-tb-4 row pendente">PENDENTE</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">MENSALIDADE</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">JOÃO DA SILVA</div>
+							<div class="col-pc-1 col-mb-3 col-tb-1 row">R$809,99</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">20/07/2016</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">
 								<a href="#">PAGAR</a>
+							</div>
+							<div class="col-mb-2 col-tb-2 row pc-hidden show-pay">
+								<i class="fa fa-plus"></i>
+							</div>
+							<div class="pc-hidden col-mb-12 col-tb-12 info-pay">
+								<div class="sub-thead">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">RESPONSÁVEL</div>
+										<div class="col-mb-6 col-tb-6 row">VENCIMENTO</div>
+									</div>
+								</div>
+								<div class="sub-tbody">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">JOÃO DA SILVA</div>
+										<div class="col-mb-6 col-tb-6 row">20/07/2016</div>
+										<div class="col-mb-12 col-tb-12 row button-pay">
+											<a href="#" class="col-mb-12 col-tb-12 button">PAGAR</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="lin">
-							<div class="col-pc-1 col-mb-1 col-tb-1 row"><input type="checkbox"></div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">06/2016</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row atrasado">ATRASADO</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">MENSALIDADE</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">JOÃO DA SILVA</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">R$809,99</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">20/06/2016</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">
+							<div class="col-pc-1 col-mb-1 col-tb-1 row hidden-mb"><input type="checkbox"></div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">06/2016</div>
+							<div class="col-pc-1 col-mb-4 col-tb-4 row atrasado">ATRASADO</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">MENSALIDADE</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">JOÃO DA SILVA</div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">R$809,99</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">20/06/2016</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">
 								<a href="#">PAGAR</a>
+							</div>
+							<div class="col-mb-2 col-tb-2 row pc-hidden show-pay">
+								<i class="fa fa-plus"></i>
+							</div>
+							<div class="pc-hidden col-mb-12 col-tb-12 info-pay">
+								<div class="sub-thead">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">RESPONSÁVEL</div>
+										<div class="col-mb-6 col-tb-6 row">VENCIMENTO</div>
+									</div>
+								</div>
+								<div class="sub-tbody">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">JOÃO DA SILVA</div>
+										<div class="col-mb-6 col-tb-6 row">20/07/2016</div>
+										<div class="col-mb-12 col-tb-12 row button-pay">
+											<a href="#" class="col-mb-12 col-tb-12 button">PAGAR</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="lin">
-							<div class="col-pc-1 col-mb-1 col-tb-1 row"><input type="checkbox"></div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">05/2016</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row pago">PAGO</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">MENSALIDADE</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">JOÃO DA SILVA</div>
-							<div class="col-pc-1 col-mb-1 col-tb-1 row">R$809,99</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row">20/05/2016</div>
-							<div class="col-pc-2 col-mb-2 col-tb-2 row"></div>
+							<div class="col-pc-1 col-mb-1 col-tb-1 row hidden-mb"><input type="checkbox"></div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">05/2016</div>
+							<div class="col-pc-1 col-mb-4 col-tb-4 row pago">PAGO</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">MENSALIDADE</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">JOÃO DA SILVA</div>
+							<div class="col-pc-1 col-mb-3 col-tb-3 row">R$809,99</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb">20/05/2016</div>
+							<div class="col-pc-2 col-mb-2 col-tb-2 row hidden-mb"></div>
+							<div class="col-mb-2 col-tb-2 row pc-hidden show-pay">
+								<i class="fa fa-plus"></i>
+							</div>
+							<div class="pc-hidden col-mb-12 col-tb-12 info-pay">
+								<div class="sub-thead">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">RESPONSÁVEL</div>
+										<div class="col-mb-6 col-tb-6 row">VENCIMENTO</div>
+									</div>
+								</div>
+								<div class="sub-tbody">
+									<div class="lin">
+										<div class="col-mb-6 col-tb-6 row">JOÃO DA SILVA</div>
+										<div class="col-mb-6 col-tb-6 row">20/07/2016</div>
+										<div class="col-mb-12 col-tb-12 row button-pay">
+											<a href="#" class="col-mb-12 col-tb-12 button">PAGAR</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -208,6 +297,21 @@
 
 			// Mostra/esconde os elementos que tenha a classe .menu-item-text
 			$(".side-nav .menu-item-text").toggle();
+
+		});
+		$(".show-rent").click(function(){
+
+			$(this).siblings("div.info-rent").slideToggle(300);
+
+			$(this).find("i").toggleClass("fa-plus fa-minus");
+
+		});
+		$(".show-pay").click(function(){
+
+			$(this).siblings(".info-pay").slideToggle(300);
+
+			$(this).find("i").toggleClass("fa-plus fa-minus");
+
 		});
 	</script>
 

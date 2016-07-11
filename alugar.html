@@ -27,12 +27,40 @@
 					<span class="menu-item-text">Página Inicial</span>
 				</a>
 			</li>
-			<li>
+			<li class="dropdown">
+				<a href="">
+					<i class="fa fa-book"></i>
+					<span class="menu-item-text">Aulas</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="boletim.html">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Notas</span>
+						</a>
+					</li>
+				</ul>
+			<li class="dropdown">
 				<a href="">
 					<i class="fa fa-book"></i>
 					<span class="menu-item-text">Biblioteca</span>
+					<i class="fa fa-plus float-r menu-item-text"></i>
 				</a>
-			</li>
+				<ul>
+					<li>
+						<a href="alugar.html" class="active">
+							<i class="fa fa-frown-o"></i>
+							<span class="menu-item-text">Alugar</span>
+						</a>
+					</li>
+					<li>
+						<a href="retirado.html">
+							<i class="fa fa-institution"></i>
+							<span class="menu-item-text">Retirados</span>
+						</a>
+					</li>
+				</ul>
 			<li>
 				<a href="dados.html">
 					<i class="fa fa-user"></i>
@@ -47,13 +75,13 @@
 				</a>
 				<ul>
 					<li>
-						<a href="boleto.html" class="active">
+						<a href="boleto.html">
 							<i class="fa fa-barcode"></i>
 							<span class="menu-item-text">Boletos</span>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="ir.html">
 							<i class="fa fa-institution"></i>
 							<span class="menu-item-text">Comprovante de I.R</span>
 						</a>
@@ -128,9 +156,7 @@
 				<h3>Biblioteca - Alugar</h3>
 			</div>
 			<div class="content-block">
-				<div class="col-pc-11 filter-book center-auto">
-					<fieldset class="col-pc-12 fieldset-filter">
-						<legend>Filtro</legend>
+				<div class="col-pc-12 filter-book center-auto">
 						<form action="">
 							<div class="col-pc-4 group-form">
 								<label for="NameBook">Nome do Livro</label>
@@ -158,57 +184,55 @@
 							</div>
 
 							<input type="submit" class="col-pc-3" id="searchBook" value="Pesquisar">
-
 						</form>
-					</fieldset>
 				</div>
 				<div class="content-block biblioteca">
 				
-					<table class="col-pc-12 col-mb-12 col-tb-12">
-						<thead>
-							<tr>
-								<td>Nome</td>
-								<td>Autor</td>
-								<td>Qtd de Páginas</td>
-								<td>Ano</td>
-								<td>Status</td>
-								<td>OPÇÕES</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>PHP DA LOUCURA</td>
-								<td>João Pavão</td>
-								<td>344</td>
-								<td>2014</td>
-								<td class="avaiable">Disponível</td>
-								<td>
+					<div class="table col-pc-12 col-mb-12 col-tb-12">
+						<div class="thead">
+							<div class="lin">
+								<div class="row col-pc-2">Nome</div>
+								<div class="row col-pc-2">Autor</div>
+								<div class="row col-pc-2">Páginas</div>
+								<div class="row col-pc-1">Ano</div>
+								<div class="row col-pc-2">Status</div>
+								<div class="row col-pc-3">OPÇÕES</div>
+							</div>
+						</div>
+						<div class="tbody">
+							<div class="lin">
+								<div class="row col-pc-2 ">PHP DA LOUCURA</div>
+								<div class="row col-pc-2 ">João Pavão</div>
+								<div class="row col-pc-2 ">344</div>
+								<div class="row col-pc-1 ">2014</div>
+								<div class="row col-pc-2 avaiable">Disponível</div>
+								<div class="row col-pc-3 ">
 									<a href="#">RETIRAR</a>
 									<a href="#">RESERVAR</a>
-								</td>
-							</tr>
-							<tr>
-								<td>JS NINJA</td>
-								<td>Juca Silva</td>
-								<td>254</td>
-								<td>2015</td>
-								<td class="not-avaiable">Alugado</td>
-								<td>
+								</div>
+							</div>
+							<div class="lin">
+								<div class="row col-pc-2 ">JS NINJA</div>
+								<div class="row col-pc-2 ">Juca Silva</div>
+								<div class="row col-pc-2 ">254</div>
+								<div class="row col-pc-1 ">2015</div>
+								<div class="row col-pc-2 not-avaiable">Alugado</div>
+								<div class="row col-pc-3 ">
 									<a href="#" class="alugado">RETIRAR</a>
 									<a href="#">RESERVAR</a>
-								</td>
-							</tr>
-							<tr>
-								<td>Html + Css</td>
-								<td>PAGO</td>
-								<td>440</td>
-								<td>2014</td>
-								<td class="avaiable">Disponível</td>
-								<td>
+								</div>
+							</div>
+							<div class="lin">
+								<div class="row col-pc-2 ">Html + Css</div>
+								<div class="row col-pc-2 ">PAGO</div>
+								<div class="row col-pc-2 ">440</div>
+								<div class="row col-pc-1 ">2014</div>
+								<div class="row col-pc-2 avaiable">Disponível</div>
+								<div class="row col-pc-3">
 									<a href="#">RETIRAR</a>
 									<a href="#">RESERVAR</a>
 								</td>
-							</tr>
+							</div>
 						</tbody>
 					</table>
 
